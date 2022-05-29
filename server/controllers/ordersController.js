@@ -1,3 +1,5 @@
+// в данном компоненте описана работа приложения с заказами внутри магазина
+
 const {Orders, OrderDevice, Device, Brand, Type} = require('./../models/models');
 const ApiError = require('../error/apiError');
 const jwt = require('jsonwebtoken');
