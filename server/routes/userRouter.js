@@ -1,3 +1,5 @@
+// Маршрутизация приложения в компоненте пользователя
+
 const Router = require('express');
 const router = new Router();
 const userController = require('./../controllers/userController');
