@@ -1,3 +1,5 @@
+// в данном компоненте описана работа приложения с созданием бренда
+
 const {Brand} = require('./../models/models');
 
 class BranController {
