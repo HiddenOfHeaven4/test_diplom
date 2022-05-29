@@ -5,6 +5,8 @@ import {Link, useNavigate} from 'react-router-dom';
 import {ADMIN_ROUTE, BASKET_ROUTE, DEVICE_ROUTE} from "../utils/consts";
 import styled from 'styled-components';
 
+// Создание страницы товара, основа лежит на запросе к серверу через Axios, далее установка маршутиризации 
+
 export default ({device}) => {
     const Navigate = useNavigate();
     return (
