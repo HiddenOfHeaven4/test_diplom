@@ -3,6 +3,8 @@ import {Context} from "../index";
 import {NavLink} from "react-router-dom";
 import styled from 'styled-components';
 
+// Создание страницы корзины при заполнения его товарами, логика основана на запросе с сервера, и получения данных с него, для уменьшения вложености кода используем useContext
+
 const OneItemInBasket = ({device}) => {
     const {basket, user} = useContext(Context);
 
