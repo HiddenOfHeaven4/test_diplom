@@ -1,5 +1,8 @@
 import {makeAutoObservable} from "mobx";
 
+// Определение типов для корректной обработки данных с сервера
+
+
 export default class DeviceStore {
     constructor() {
         this._types = [];
