@@ -8,6 +8,11 @@ import {observer} from "mobx-react-lite";
 import {Context} from "../index";
 import styled from 'styled-components';
 
+//  Страница авторизации, регистрации пользователей с использованием MobX для перехода состояния из зарегистрироваться в состояние авторизации
+// хук useCallback для возвращения параметра функции
+// хук useNavigate для маршутиризации между двумя состояниями
+
+
 const Auth = observer(() => {
     const {user} = useContext(Context);
     const Navigate = useNavigate();
