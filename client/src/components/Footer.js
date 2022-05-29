@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { SHOP_ROUTE } from '../utils/consts'
 
+// Подвал приложения с применением state manager (MobX)
+
 export default observer(() => {
     return (
         <Container>
