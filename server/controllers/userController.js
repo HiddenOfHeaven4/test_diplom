@@ -1,3 +1,5 @@
+// в данном компоненте описана работа с регистрацией, аутификацией пользователя в приложении
+
 const ApiError = require('./../error/apiError');
 const bcrypt = require('bcrypt');
 const {User, Basket} = require('./../models/models');
