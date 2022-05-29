@@ -1,3 +1,5 @@
+// в данном компоненте описана работа приложения с созданием товаров
+
 const { Op } = require("sequelize");
 const uuid = require('uuid');
 const path = require('path');
