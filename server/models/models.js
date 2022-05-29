@@ -50,6 +50,8 @@ const TypeBrand = sequelize.define('type_brand', {
     id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
 })
 
+// Теневая таблица которая объединяет наши компоненты, без данной таблица невозможно было установить связь с повторяющиесимя компонентами
+
 const Orders = sequelize.define('orders', {
     id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
     complete: {type: DataTypes.BOOLEAN, defaultValue: false},
@@ -64,13 +66,16 @@ const OrderDevice = sequelize.define('order_device', {
     count: {type: DataTypes.INTEGER, allowNull: false},
 })
 
-User.hasOne(Basket);
+
+// Проводим привязку наших компонентов
+
+User.hasOne(Basket);  // Вызвали функцию которая обьявляет нашу "Корзину", и соответственно даём ей понятие, что она пренадлежит "юзеру"
 Basket.belongsTo(User);
 
-User.hasMany(Rating);
+User.hasMany(Rating);  // Данная функция показывает, что она может иметь неограниченное число привязок, аналогично мы пришли к "юзеру"
 Rating.belongsTo(User);
 
-User.hasMany(Orders);
+User.hasMany(Orders);  // Проделываем аналогичные действия, что ранее, просто меняя компоненты привязки
 Orders.belongsTo(User,
     {
         foreignKey: { name: 'userId' },
