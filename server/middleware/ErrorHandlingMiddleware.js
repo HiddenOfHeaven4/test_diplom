@@ -1,4 +1,4 @@
-// Уведомление об ошибки 500
+// Уведомление об ошибке 500
 const ApiError = require('./../error/apiError');
 
 module.exports = function (err, req, res, next) {
