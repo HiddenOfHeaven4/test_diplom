@@ -5,6 +5,8 @@ import {sendOrder} from "../http/ordersAPI";
 import {useNavigate} from "react-router-dom";
 import {SHOP_ROUTE} from "../utils/consts";
 
+// Простая логика оформления заказа после его подсчёта и корзине с помощью методов прописанных в API.
+
 const Ordering = () => {
     const {basket, user} = useContext(Context);
     const [phone, setPhone] = useState(null);
