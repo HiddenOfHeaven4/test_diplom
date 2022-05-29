@@ -1,3 +1,5 @@
+// Функция для работы пользователя с токеном.
+
 const jwt = require('jsonwebtoken');
 
 function getUserFromToken(headersAuth) {
