@@ -8,4 +8,4 @@ export const ORDERS_ROUTE = '/orders';
 export const DEVICE_EDIT_ROUTE = '/device/edit';
 export const ORDERING_ROUTE = '/checkout';
 
-
+// Объявление постоянных действительных значений для маршутиризации по страницам
