@@ -2,6 +2,9 @@ import React, {useEffect, useState} from 'react';
 import {Button, Dropdown, Modal} from "react-bootstrap";
 import {deleteBrand, deleteType, fetchBrands, fetchTypes} from "../../http/deviceAPI";
 
+//  Модальное окно для удаления брендов и типов
+// Основа построения на запросах к серверу, с применением хуков useState для управления состоянием в функционале компонента, useEffect для построения side effects
+
 const DeleteBrandOrType = ({show, onHide, showSuccessMsgFunc}) => {
     const [brandOrType, setBrandOrType] = useState("Бренд");
     const [brands, setBrands] = useState([]);
