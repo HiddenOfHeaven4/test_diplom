@@ -1,6 +1,8 @@
 import {makeAutoObservable} from "mobx";
 import {deleteDeviceFromBasket} from "../http/deviceAPI";
 
+// Обработчик данных с сервера
+
 export default class BasketStoreStore {
     constructor() {
         this._totalPrice = 0;
