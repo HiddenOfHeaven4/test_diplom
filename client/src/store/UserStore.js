@@ -1,6 +1,8 @@
 import {makeAutoObservable} from "mobx";
 import jwt_decode from "jwt-decode";
 
+// Определение типов для корректной обработки данных с сервера, и безопасного хранения токенов и его декодирования
+
 export default class UserStore {
     constructor() {
         this._isAuth = false;
