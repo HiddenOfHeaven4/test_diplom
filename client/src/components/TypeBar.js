@@ -3,6 +3,8 @@ import {observer} from "mobx-react-lite";
 import {Context} from "../index";
 import {ListGroup} from "react-bootstrap";
 
+// Создание таблицы для вывода к нужному товару, полагаясь на типы и бренды. Применялся хук useCallback для возращения аргумента еще раз.
+
 const TypeBar = observer(() => {
     const {device} = useContext(Context);
 
