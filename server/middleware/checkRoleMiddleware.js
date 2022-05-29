@@ -1,3 +1,5 @@
+// Уведомление об ошибке при работе с ролями админа, рядового пользователя
+
 const jwt = require('jsonwebtoken');
 
 module.exports = function(role) {
