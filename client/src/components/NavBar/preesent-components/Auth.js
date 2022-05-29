@@ -8,6 +8,8 @@ import RateSvg from '../../../assets/svg/rate.svg'
 import LogoutSvg from '../../../assets/svg/logout.svg'
 import styled from "styled-components";
 
+// Компонент который проверяет права пользователя на пользование сайтом (аутефикация)
+
 const Auth = () => {
     const {user, basket} = useContext(Context);
     const Navigate = useNavigate();
