@@ -8,6 +8,8 @@ import {fetchBrands, fetchDevice, fetchTypes} from "../http/deviceAPI";
 import Pages from "../components/Pages";
 import styled from 'styled-components';
 
+// Главная страница приложения, в которой привидены все текущее свойства Device,Type, Brand основанные на запросах к серверу, и управление состоянием через MobX
+
 export default observer(() => {
     const {device} = useContext(Context);
 
