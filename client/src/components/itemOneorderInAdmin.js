@@ -4,13 +4,12 @@ import styled from 'styled-components';
 import {fetchChangeStatusOrder, fetchDeleteOrder} from "../http/ordersAPI";
 import {ORDERS_ROUTE} from "../utils/consts";
 
-
+// Создание страницы заказы и его логика, основана на пропсах от корзины с товарами, применяю хук useState для управления состоянием компонента.
 
 const ItemOneOrderInAdmin = ({id, complete, mobile, createdAt, updatedAt, userId, reRender}) => {
     const [modalDelete, setShowDelete] = useState(false);
     const [modalStatus, setShowStatus] = useState(false);
 
-    //modal delete
     const handleCloseDelete = () => setShowDelete(false);
     const handleShowDelete = () => setShowDelete(true);
     const deleteOrder = () => {
@@ -20,7 +19,6 @@ const ItemOneOrderInAdmin = ({id, complete, mobile, createdAt, updatedAt, userId
         })
     }
 
-    //modal status
     const handleCloseStatus = () => setShowStatus(false);
     const handleShowStatus = () => setShowStatus(true);
     const changeStatusOrder = () => {
@@ -30,7 +28,6 @@ const ItemOneOrderInAdmin = ({id, complete, mobile, createdAt, updatedAt, userId
         })
     }
 
-    //Format date (createdAt)
     const formatDate = (propsDate) => {
         const date = new Date(Date.parse(propsDate));
         const options = {
