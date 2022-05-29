@@ -20,6 +20,10 @@ import {NavLink} from "react-router-dom";
 import {DEVICE_EDIT_ROUTE} from "../utils/consts";
 import DeleteBrandOrType from "../components/modals/DeleteBrandOrType";
 
+// Создание страницы ЛК основываясь на запросах к серверу, с использованием сразу ложного состояния функций с помощью хука useState (для определения роли пользователя).
+// Установка пагинации для нумерования страниц
+// хук useEffect для работы с отображением содержимого на странице
+
 const Admin = () => {
     const [brandVisible, setBrandVisible] = useState(false);
     const [typeVisible, setTypeVisible] = useState(false);
