@@ -1,3 +1,5 @@
+// компонент работы с рейтенгом в приложение
+
 const {Rating, Device} = require('./../models/models');
 const jwt = require('jsonwebtoken');
 
