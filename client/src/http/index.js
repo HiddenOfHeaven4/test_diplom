@@ -1,5 +1,7 @@
 import axios from "axios";
 
+// Используем библеотеку axios для работы с запросами к серверу, установим методы, и хранение локальных файлов поддержки функционала (jwt)
+
 const $host = axios.create({
     baseURL: process.env.REACT_APP_API_URL,
     responseType: "json",
