@@ -1,3 +1,5 @@
+// Маршрутизация приложения в компоненте заказов
+
 const Router = require('express');
 const router = new Router();
 
