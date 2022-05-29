@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import {Button, Form, Modal} from "react-bootstrap";
 import {createType} from "../../http/deviceAPI";
 
+//  Модальное окно для создания типов
+
 const CreateType = ({show, onHide}) => {
     const [value, setValue] = useState('');
     const addType = () => {
