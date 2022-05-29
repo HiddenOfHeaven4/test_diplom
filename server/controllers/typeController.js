@@ -1,3 +1,5 @@
+// в данном компоненте описана работа приложения с созданием типов
+
 const {Type} = require('./../models/models');
 
 class TypeController {
