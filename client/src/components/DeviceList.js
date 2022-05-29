@@ -4,6 +4,7 @@ import {Context} from "../index";
 import DeviceItem from "./deviceItem";
 import styled from 'styled-components';
 
+// Логика создания списка товара с применением state manager (MobX)
 
 export default observer(() => {
     const {device} = useContext(Context);
