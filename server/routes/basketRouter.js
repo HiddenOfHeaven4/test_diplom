@@ -1,3 +1,5 @@
+// Маршрутизация приложения в компоненте корзины
+
 const Router = require('express');
 const router = new Router();
 const BasketController = require('./../controllers/basketController');
