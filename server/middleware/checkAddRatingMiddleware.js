@@ -1,3 +1,5 @@
+// Уведомление об ошибке в добавление рейтинга 
+
 const {Rating, Device} = require('./../models/models');
 
 const jwt = require('jsonwebtoken');
