@@ -3,6 +3,8 @@ import {observer} from "mobx-react-lite";
 import {Context} from "../index";
 import styled from 'styled-components';
 
+// Логика создания бренда с применением state manager (MobX)
+
 const BrandBar = observer(()  => {
     const {device} = useContext(Context);
     return (
