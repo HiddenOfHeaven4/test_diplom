@@ -3,6 +3,8 @@ import {Col, Container, Image, Row, Spinner} from "react-bootstrap";
 import {useParams} from "react-router-dom";
 import {getOneOrderDevices} from "../http/ordersAPI";
 
+// Логика страниц заказов основана на работе запросов к серверу
+
 const OneOrder = () => {
     const {id} = useParams();
     const [loading, setLoading] = useState(true);
