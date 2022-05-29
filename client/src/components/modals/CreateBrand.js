@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import {Button, Form, Modal} from "react-bootstrap";
 import {createBrand} from "../../http/deviceAPI";
 
+//  Модальное окно для создание бренда
+
 const CreateBrand = ({show, onHide}) => {
     const [value, setValue] = useState('');
     const addBrand = () => {
