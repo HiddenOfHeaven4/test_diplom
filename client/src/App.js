@@ -11,6 +11,8 @@ import {getDeviceFromBasket} from "./http/deviceAPI";
 import Footer from "./components/Footer";
 import styled from "styled-components";
 
+// Глобальная обработка компонентов приложения при работе с сервером
+
 const App = observer(() => {
     const {user, basket} = useContext(Context);
     const [loading, setLoading] = useState(false);
