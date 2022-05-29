@@ -3,6 +3,8 @@ import {observer} from "mobx-react-lite";
 import {Context} from "../index";
 import {Pagination} from "react-bootstrap";
 
+// Установка пагинации страниц с помощью цикла, и компонента React Boostrap, MobX
+
 const Pages = observer(() => {
     const {device} = useContext(Context);
     const pageCount = Math.ceil(device.totalCount / device.limit);
