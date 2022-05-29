@@ -2,6 +2,8 @@ import React from 'react';
 import {Route, Routes } from 'react-router-dom';
 import {authRoutes, publicRoutes} from "../routes";
 
+// Роутинг для работы компонентов с ролями "Зарегистрирован", "Не зарегистрирован" 
+
 const AppRouter = () => {
     const isAuth = false
     return (
