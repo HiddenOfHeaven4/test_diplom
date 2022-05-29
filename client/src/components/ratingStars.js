@@ -1,6 +1,8 @@
 import React from 'react';
 import Rating from '@mui/material/Rating';
 
+// Фича с добавлением рейтинга на фронте, основа на запросе с сервера
+
 const RatingStars = ({ratingChanged, ratingVal, isAuth, isAccessRating}) => {
     if(isAuth && isAccessRating) {
         return (
