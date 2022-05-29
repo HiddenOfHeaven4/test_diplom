@@ -6,6 +6,8 @@ import UserStore from "./store/UserStore";
 import DeviceStore from "./store/DeviceStore";
 import BasketStoreStore from "./store/BasketStore";
 
+// Просто создание роутинга и его объявление
+
 export const Context = createContext(null)
 
 ReactDOM.createRoot(document.getElementById('root'))
