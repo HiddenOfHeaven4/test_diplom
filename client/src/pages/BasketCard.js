@@ -10,6 +10,8 @@ import {ORDERING_ROUTE} from "../utils/consts";
 import {NavLink} from "react-router-dom";
 import styled from 'styled-components';
 
+//  Страница пустой корзины с состоянием через MobX
+
 const BasketCard = observer(() => {
     const {basket} = useContext(Context);
 
