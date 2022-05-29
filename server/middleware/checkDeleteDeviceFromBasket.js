@@ -1,3 +1,5 @@
+// Уведомление об ошибке при работе с корзиной 
+
 const {Basket, BasketDevice} = require('./../models/models');
 const jwt = require('jsonwebtoken');
 
