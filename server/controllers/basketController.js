@@ -1,3 +1,5 @@
+// в данном компоненте описана работа приложения с корзиной 
+
 const {Basket, BasketDevice, Device, DeviceInfo} = require('./../models/models');
 const jwt = require('jsonwebtoken');
 const { Op } = require("sequelize");
