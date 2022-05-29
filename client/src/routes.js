@@ -20,6 +20,11 @@ import OneOrder from "./pages/OneOrder";
 import DevicePageEdit from "./pages/DevicePageEdit";
 import Ordering from "./pages/Ordering";
 
+// Ролевые обработчики по задачам
+
+// Первый тип "authRoutes" для взаимодействия авторизованого пользователя с приложением
+// Второй тип "publicRoutes" для взаимодействия не авторизованого пользователя с приложением
+
 
 export const authRoutes = [
     {
