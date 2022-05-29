@@ -4,6 +4,9 @@ import {Button, Col, Dropdown, Form, Modal, Row} from "react-bootstrap";
 import {createDevice, fetchBrands, fetchTypes} from "../../http/deviceAPI";
 import {observer} from "mobx-react-lite";
 
+//  Модальное окно для создание товара
+// Основа построения на запросах к серверу, с применением хука useEffect для построения side effects
+
 const CreateDevice = observer(({show, onHide}) => {
     const {device} = useContext(Context);
     const [name, setName] = useState('');
