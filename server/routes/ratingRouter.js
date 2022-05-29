@@ -1,3 +1,5 @@
+// Маршрутизация приложения в компоненте рейтенга
+
 const Router = require('express');
 const router = new Router();
 const authMiddleware = require('./../middleware/authMiddleware');
