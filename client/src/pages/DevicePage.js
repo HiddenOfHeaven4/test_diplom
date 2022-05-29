@@ -7,6 +7,9 @@ import star from '../assets/star.png';
 import styled from 'styled-components';
 import RatingStars from '../components/ratingStars'
 
+// Логика страницы товара с использоваем MobX, useState.
+// useParams для параметра поиска
+
 const DevicePage = observer(() => {
     const {user, basket} = useContext(Context);
     const [device, setDevice] = useState({info: []});
